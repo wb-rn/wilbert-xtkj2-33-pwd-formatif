@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kumpulan Tombol - Wilbert</title>
+    <style>
+      /* Pengaturan dasar halaman */
+      body {
+        background-color: #ffffff;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 40px;
+      }
+
+      h2 {
+        color: #333;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      /* Pembungkus tombol */
+      .button-group {
+        margin-bottom: 30px;
+      }
+
+      /* Aturan utama untuk semua tombol (.btn) */
+      .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-weight: bold;
+        text-decoration: none;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+
+      /* Warna latar belakang masing-masing tombol */
+      .btn-primary {
+        background-color: #0056b3;
+        color: white;
+      }
+
+      /* Grouping selector untuk .btn-secondary dan .btn-outline (berbagi warna teks yang sama) */
+      .btn-secondary,
+      .btn-outline {
+        color: #333;
+      }
+
+      .btn-secondary {
+        background-color: #e2e8f0;
+      }
+
+      .btn-outline {
+        background-color: #ffffff;
+        border: 2px solid #cbd5e1;
+      }
+
+      .btn-send {
+        background-color: #d97706;
+        color: white;
+      }
+
+      /* Efek saat kursor menyentuh tombol (Pseudo-class :hover) */
+      .btn-primary:hover {
+        background-color: #004085;
+      }
+
+      .btn-secondary:hover {
+        background-color: #cbd5e1;
+      }
+
+      .btn-outline:hover {
+        background-color: #f1f5f9;
+      }
+
+      .btn-send:hover {
+        background-color: #b45309;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h2>Kumpulan Tombol Interaktif</h2>
+
+      <!-- Div pembungkus tombol -->
+      <div class="button-group">
+        <a href="#" class="btn btn-primary">Lihat Proyek</a>
+        <a href="#" class="btn btn-secondary">Unduh CV</a>
+        <a href="#" class="btn btn-outline">Hubungi Saya</a>
+        <a href="#" class="btn btn-send">Kirim Pesan</a>
+      </div>
+    </main>
+
+    <!-- Tautan kembali ke beranda -->
+    <footer>
+      <a
+        href="../index.html"
+        style="
+          color: #0056b3;
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: bold;
+        "
+        >← Kembali ke Beranda</a
+      >
+    </footer>
+  </body>
+</html>

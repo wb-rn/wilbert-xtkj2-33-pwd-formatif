@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Galeri Proyek - Wilbert</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #f8fafc;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 40px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #0f172a;
+        margin-bottom: 30px;
+      }
+
+      /* Tata letak Grid untuk Galeri */
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .gallery-card {
+        background: #ffffff;
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid #cbd5e1;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        transition: transform 0.2s ease;
+      }
+
+      .gallery-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .gallery-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .card-body {
+        padding: 15px;
+      }
+
+      .card-body h3 {
+        margin: 0 0 8px 0;
+        font-size: 16px;
+        color: #1e293b;
+      }
+
+      .card-body p {
+        margin: 0;
+        font-size: 13px;
+        color: #64748b;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      footer a {
+        color: #2563eb;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Galeri Proyek</h1>
+
+    <div class="gallery-grid">
+      <div class="gallery-card">
+        <img
+          src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=500&auto=format&fit=crop&q=60"
+          alt="Website Foto Video"
+        />
+        <div class="card-body">
+          <h3>Website Foto Video</h3>
+          <p>Deskripsi singkat proyek pertama.</p>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <img
+          src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&auto=format&fit=crop&q=60"
+          alt="Aplikasi Catatan"
+        />
+        <div class="card-body">
+          <h3>Aplikasi Catatan</h3>
+          <p>Deskripsi singkat proyek kedua.</p>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <img
+          src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=500&auto=format&fit=crop&q=60"
+          alt="Blog Pribadi"
+        />
+        <div class="card-body">
+          <h3>Blog Pribadi</h3>
+          <p>Deskripsi singkat proyek ketiga.</p>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <img
+          src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&auto=format&fit=crop&q=60"
+          alt="Kalkulator Web"
+        />
+        <div class="card-body">
+          <h3>Kalkulator Web</h3>
+          <p>Deskripsi singkat proyek keempat.</p>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <img
+          src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&auto=format&fit=crop&q=60"
+          alt="Halaman Resep"
+        />
+        <div class="card-body">
+          <h3>Halaman Resep</h3>
+          <p>Deskripsi singkat proyek kelima.</p>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <img
+          src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=500&auto=format&fit=crop&q=60"
+          alt="Portofolio Foto"
+        />
+        <div class="card-body">
+          <h3>Portofolio Foto</h3>
+          <p>Deskripsi singkat proyek keenam.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <a href="../index.html">&larr; Kembali ke Beranda</a>
+    </footer>
+  </body>
+</html>

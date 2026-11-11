@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nomor 4.2 - Hero Beranimasi</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        font-family: Arial, sans-serif;
+        background-color: #0f172a;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Container Hero dengan Background Gambar Hutan/Pemandangan Dark */
+      .hero-section {
+        width: 90%;
+        max-width: 800px;
+        height: 380px;
+        background-image:
+          linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url("https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=1600&auto=format&fit=crop");
+        background-size: cover;
+        background-position: center;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Animasi Keyframes: Muncul perlahan sambil naik dari bawah */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Grouping Selector untuk Konten Pembuka */
+      .hero-content h1,
+      .hero-content p,
+      .hero-content .btn-hero {
+        animation: fadeInUp 1.2s ease-out forwards;
+      }
+
+      .hero-content h1 {
+        font-size: 28px;
+        margin: 0 0 8px 0;
+        font-weight: bold;
+      }
+
+      .hero-content p {
+        font-size: 13px;
+        color: #cbd5e1;
+        margin: 0 0 20px 0;
+      }
+
+      .hero-content .btn-hero {
+        display: inline-block;
+        background-color: #ea580c;
+        color: white;
+        padding: 8px 20px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+      }
+
+      .hero-content .btn-hero:hover {
+        background-color: #c2410c;
+      }
+
+      /* Link Kembali ke Beranda */
+      .back-link {
+        margin-top: 15px;
+        text-align: center;
+      }
+
+      .back-link a {
+        color: #94a3b8;
+        font-size: 12px;
+        text-decoration: none;
+      }
+
+      .back-link a:hover {
+        color: #ffffff;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Section Pembuka (Hero) -->
+    <div class="hero-section">
+      <div class="hero-content">
+        <h1>Halo, Saya Wilbert Kent</h1>
+        <p>Siswa X TKJ 2 - Pembuat Web Pemula</p>
+        <a href="#" class="btn-hero">Lihat Proyek</a>
+      </div>
+    </div>
+
+    <!-- Tombol Kembali ke Beranda -->
+    <div class="back-link">
+      <a href="../index.html">&larr; Kembali ke Beranda</a>
+    </div>
+  </body>
+</html>

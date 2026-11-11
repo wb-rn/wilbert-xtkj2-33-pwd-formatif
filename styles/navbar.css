@@ -1,0 +1,53 @@
+/* Aturan dasar body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8fafc;
+}
+
+/* Header dengan latar belakang gelap */
+#main-header {
+  background-color: #0f172a;
+}
+
+/* Navbar menggunakan Flexbox untuk memisahkan logo dan menu */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+/* Tampilan logo di kiri */
+.logo {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Daftar menu (ul) menggunakan Flexbox */
+.nav-menu {
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Menghilangkan titik hitam pada daftar list menggunakan selector child (>) */
+.nav-menu > li {
+  list-style: none;
+}
+
+/* Tautan menu menggunakan selector descendant */
+.nav-menu a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+/* Efek saat kursor menyentuh menu (hover) */
+.nav-menu a:hover {
+  color: #ffffff;
+}

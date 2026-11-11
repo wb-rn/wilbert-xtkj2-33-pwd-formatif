@@ -1,0 +1,73 @@
+/* Pengaturan Dasar */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8fafc;
+  margin: 0;
+  padding: 0;
+  color: #1e293b;
+}
+
+/* Header: Latar biru gelap, teks putih, rata tengah */
+header {
+  background-color: #1e3a8a;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Kotak Utama / Main */
+main {
+  max-width: 600px;
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border: 1px dashed #94a3b8;
+}
+
+/* Judul Kategori Komponen & Halaman */
+#components h2,
+#pages h2 {
+  font-size: 15px;
+  color: #1e3a8a;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+/* Daftar Tautan List */
+ul {
+  padding-left: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* Warna Tautan / Link */
+main a {
+  color: #d97706;
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+/* Footer bawah */
+footer {
+  background-color: #e2e8f0;
+  text-align: center;
+  padding: 12px;
+  font-size: 13px;
+  color: #475569;
+  margin-top: 40px;
+}

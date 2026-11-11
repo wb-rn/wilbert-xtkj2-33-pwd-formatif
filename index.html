@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portofolio Utama - Wilbert Kent</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #f8fafc;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 40px;
+      }
+
+      .container {
+        max-width: 700px;
+        margin: 0 auto;
+        background: #ffffff;
+        padding: 35px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        border: 1px solid #cbd5e1;
+      }
+
+      h1 {
+        color: #0f172a;
+        font-size: 26px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+
+      .subtitle {
+        text-align: center;
+        color: #64748b;
+        font-size: 15px;
+        margin-bottom: 30px;
+      }
+
+      /* Daftar Navigasi Menu Tugas */
+      .menu-section {
+        margin-bottom: 25px;
+      }
+
+      .menu-section h3 {
+        color: #1e293b;
+        font-size: 16px;
+        border-bottom: 2px solid #e2e8f0;
+        padding-bottom: 8px;
+        margin-bottom: 12px;
+      }
+
+      .menu-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+
+      .menu-list li a {
+        display: block;
+        background-color: #f1f5f9;
+        color: #2563eb;
+        padding: 10px 15px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+        transition:
+          background-color 0.2s,
+          color 0.2s;
+      }
+
+      .menu-list li a:hover {
+        background-color: #2563eb;
+        color: #ffffff;
+      }
+
+      /* Membuat tombol 4.3 melebar penuh menutupi 2 kolom bawah */
+      .full-width {
+        grid-column: span 2;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 30px;
+        color: #94a3b8;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Portofolio Asesmen Formatif CSS</h1>
+      <p class="subtitle">
+        Wilbert Kent | X TKJ 2 | SMK Kristen Immanuel Pontianak
+      </p>
+
+      <!-- Bagian 1: Dasar CSS & Teks -->
+      <div class="menu-section">
+        <h3>Bagian 1: Dasar CSS & Teks</h3>
+        <ul class="menu-list">
+          <li><a href="pages/profile.html">1.1 Profil Singkat</a></li>
+          <li><a href="components/button-set.html">1.2 Kumpulan Tombol</a></li>
+          <li><a href="pages/about.html">1.3 Tentang Saya</a></li>
+        </ul>
+      </div>
+
+      <!-- Bagian 2: Box Model & Posisi -->
+      <div class="menu-section">
+        <h3>Bagian 2: Box Model & Posisi</h3>
+        <ul class="menu-list">
+          <li><a href="components/card.html">2.1 Kartu Proyek</a></li>
+          <li>
+            <a href="components/card-badge.html">2.2 Kartu + Label & Top</a>
+          </li>
+          <li><a href="pages/contact.html">2.3 Formulir Kontak</a></li>
+        </ul>
+      </div>
+
+      <!-- Bagian 3: Flexbox & Grid -->
+      <div class="menu-section">
+        <h3>Bagian 3: Flexbox & Grid</h3>
+        <ul class="menu-list">
+          <li><a href="components/navbar.html">3.1 Menu Navigasi</a></li>
+          <li><a href="pages/gallery.html">3.2 Galeri Proyek</a></li>
+          <li><a href="components/sidebar.html">3.3 Menu Samping</a></li>
+        </ul>
+      </div>
+
+      <!-- Nomor 4.3 - Halaman Utama & Transisi Lengkap 4.1 - 4.3 -->
+      <div class="menu-section">
+        <h3>
+          Nomor 4.3 - Halaman Utama (index.html), Folder, dan Riwayat Commit
+        </h3>
+        <ul class="menu-list">
+          <li>
+            <a href="components/interactive.html">4.1 Tombol Transisi</a>
+          </li>
+          <li>
+            <a href="pages/hero.html">4.2 Bagian Pembuka (Hero)</a>
+          </li>
+          <li class="full-width">
+           <a href="main-portfolio.html">4.3 Halaman Utama (Beranda LKPD)</a>
+          </li>
+        </ul>
+      </div>
+
+      <footer>
+        <p>&copy; 2026 Wilbert Kent - Tugas Praktik Pemrograman Web</p>
+      </footer>
+    </div>
+  </body>
+</html>

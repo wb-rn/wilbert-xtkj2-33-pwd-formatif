@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kartu dengan Label dan Tombol Ke Atas - Wilbert</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #f8fafc;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 30px;
+      }
+
+      /* Bagian atas halaman dengan id="top" */
+      #top {
+        background-color: #1e293b;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        border-radius: 6px;
+        margin-bottom: 30px;
+      }
+
+      #top h1 {
+        font-size: 20px;
+        margin: 0;
+      }
+
+      /* Kartu dengan position: relative agar label absolute bisa menempel di dalamnya */
+      .card {
+        position: relative;
+        width: 360px;
+        padding: 20px;
+        border: 2px solid #cbd5e1;
+        border-radius: 10px;
+        margin: 0 auto 30px auto;
+        background-color: #ffffff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      }
+
+      /* Label "BARU" dengan position: absolute */
+      .card .badge {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background-color: #f97316;
+        color: white;
+        padding: 4px 10px;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 20px;
+      }
+
+      .card img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 6px;
+        display: block;
+      }
+
+      .card h3 {
+        color: #1e293b;
+        font-size: 18px;
+        margin: 15px 0 10px 0;
+      }
+
+      .card p {
+        font-size: 14px;
+        color: #475569;
+        line-height: 1.5;
+        margin-bottom: 15px;
+      }
+
+      .card a {
+        display: inline-block;
+        color: #2563eb;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      /* Paragraf pengisi halaman agar bisa digulir (scroll) */
+      .dummy-text {
+        max-width: 600px;
+        margin: 15px auto;
+        color: #64748b;
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: center;
+      }
+
+      /* Tombol "Ke Atas" dengan position: fixed di pojok kanan bawah */
+      .back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #0f172a;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        z-index: 100;
+      }
+
+      .back-to-top:hover {
+        background-color: #334155;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      footer a {
+        color: #2563eb;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header tujuan #top -->
+    <header id="top">
+      <h1>Proyek Saya - Halaman Utama</h1>
+    </header>
+
+    <main>
+      <!-- Kartu Proyek dengan badge BARU -->
+      <div class="card">
+        <span class="badge">BARU</span>
+        <img src="../assets/images/foto.jpg" alt="Aplikasi Catatan Harian" />
+        <h3>Aplikasi Catatan Harian</h3>
+        <p>
+          Proyek terbaru: aplikasi pencatat kegiatan harian dengan antarmuka
+          yang bersih dan mudah digunakan.
+        </p>
+        <a href="#">Lihat Proyek &rarr;</a>
+      </div>
+
+      <!-- Paragraf pengisi agar halaman menjadi panjang dan bisa di-scroll -->
+      <p class="dummy-text">
+        Paragraf pengisi 1: Bagian ini sengaja dibuat panjang agar halaman bisa
+        digulir dan tombol "Ke Atas" terlihat di pojok layar.
+      </p>
+      <p class="dummy-text">
+        Paragraf pengisi 2: Bagian ini sengaja dibuat panjang agar halaman bisa
+        digulir dan tombol "Ke Atas" terlihat di pojok layar.
+      </p>
+      <p class="dummy-text">
+        Paragraf pengisi 3: Bagian ini sengaja dibuat panjang agar halaman bisa
+        digulir dan tombol "Ke Atas" terlihat di pojok layar.
+      </p>
+      <p class="dummy-text">
+        Paragraf pengisi 4: Bagian ini sengaja dibuat panjang agar halaman bisa
+        digulir dan tombol "Ke Atas" terlihat di pojok layar.
+      </p>
+      <p class="dummy-text">
+        Paragraf pengisi 5: Bagian ini sengaja dibuat panjang agar halaman bisa
+        digulir dan tombol "Ke Atas" terlihat di pojok layar.
+      </p>
+      <p class="dummy-text">
+        Paragraf pengisi 6: Bagian ini sengaja dibuat panjang agar halaman bisa
+        digulir dan tombol "Ke Atas" terlihat di pojok layar.
+      </p>
+    </main>
+
+    <!-- Tombol Mengambang (Fixed) untuk kembali ke atas -->
+    <a href="#top" class="back-to-top">Ke Atas</a>
+
+    <footer>
+      <a href="../index.html">&larr; Kembali ke Beranda</a>
+    </footer>
+  </body>
+</html>

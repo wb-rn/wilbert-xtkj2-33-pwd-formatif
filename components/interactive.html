@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nomor 4.1 - Link dan Tombol yang Bergerak Halus</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8fafc;
+        padding: 30px;
+        margin: 0;
+        color: #1e293b;
+      }
+
+      /* Kotak utama dengan garis putus-putus khas LKPD */
+      .preview-box {
+        max-width: 650px;
+        margin: 0 auto;
+        background: #ffffff;
+        padding: 30px;
+        border: 2px dashed #64748b;
+        border-radius: 6px;
+      }
+
+      .label-teks {
+        font-size: 13px;
+        font-weight: bold;
+        color: #1e293b;
+        margin-bottom: 8px;
+        margin-top: 15px;
+      }
+
+      .label-teks:first-child {
+        margin-top: 0;
+      }
+
+      /* Menu Navigasi */
+      .nav-menu {
+        margin-bottom: 15px;
+      }
+
+      .nav-menu a {
+        text-decoration: none;
+        color: #334155;
+        margin-right: 20px;
+        font-size: 14px;
+        transition: color 0.3s ease;
+      }
+
+      /* Tombol */
+      .btn-group {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 25px;
+      }
+
+      .btn {
+        padding: 6px 14px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: bold;
+        color: white;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn-blue {
+        background-color: #3b82f6;
+      }
+
+      .btn-orange {
+        background-color: #d97706;
+      }
+
+      /* Simulasi efek hover untuk screenshot */
+      .hover-section .nav-menu a:nth-child(2) {
+        color: #f97316;
+        font-weight: bold;
+      }
+
+      .hover-section .btn-blue {
+        background-color: #1d4ed8;
+      }
+
+      .hover-section .btn-orange {
+        background-color: #b45309;
+      }
+
+      /* Tautan kembali ke beranda di bawah kotak */
+      .back-link {
+        text-align: left;
+        max-width: 650px;
+        margin: 15px auto 0 auto;
+      }
+
+      .back-link a {
+        color: #2563eb;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: bold;
+      }
+
+      .back-link a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="preview-box">
+      <!-- BAGIAN 1: KEADAAN BIASA -->
+      <div class="label-teks">Keadaan biasa</div>
+      <div class="nav-menu">
+        <a href="#" style="font-weight: bold; color: #0f172a">Beranda</a>
+        <a href="#">Tentang</a>
+        <a href="#">Proyek</a>
+        <a href="#">Kontak</a>
+      </div>
+
+      <div class="btn-group">
+        <a href="#" class="btn btn-blue">Lihat Proyek</a>
+        <a href="#" class="btn btn-orange">Hubungi Saya</a>
+      </div>
+
+      <!-- BAGIAN 2: HOVER -->
+      <div class="hover-section">
+        <div class="label-teks">
+          Hover (dipaksa agar terlihat di screenshot)
+        </div>
+        <div class="nav-menu">
+          <a href="#">Beranda</a>
+          <a href="#" style="color: #ea580c; font-weight: bold">Tentang</a>
+          <a href="#">Proyek</a>
+          <a href="#">Kontak</a>
+        </div>
+
+        <div class="btn-group" style="margin-bottom: 0">
+          <a href="#" class="btn btn-blue">Lihat Proyek</a>
+          <a href="#" class="btn btn-orange">Hubungi Saya</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tautan Kembali ke Beranda -->
+    <div class="back-link">
+      <a href="../index.html">&larr; Kembali ke Beranda</a>
+    </div>
+  </body>
+</html>
